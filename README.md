@@ -9,6 +9,7 @@ const { locatorToLatLng, distance } = require('qth-locator');
 
 locatorToLatLng('IO91wm'); // [51.521, -0.125]
 distance('IO91wm', 'KP20le'); // 1821.5 km
+azimuth('LO97xw', 'KP20le'); // 292
 ```
 
 ## License
