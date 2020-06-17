@@ -1,14 +1,14 @@
 {
-  "name": "qth-locator",
+  "name": "qth-loc-utilsa",
   "version": "1.0.0",
-  "description": "Maidenhead locator calculator",
+  "description": "Maidenhead locator utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jleh/qth-locator"
+    "url": "https://github.com/1296mhz/qth-loc-utils"
   },
   "main": "./lib/index.js",
   "scripts": {
-    "build": "rm -rf lib && babel src -d lib",
+    "build": "rimraf lib && babel src -d lib",
     "prepare": "npm run build",
     "test": "jest test"
   },
@@ -19,13 +19,15 @@
     "qth",
     "locator"
   ],
-  "author": "Juuso Lehtinen",
+  "author": "Dmitry Zyryanov",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2"
   }
 }
