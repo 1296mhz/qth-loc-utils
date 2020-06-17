@@ -17,6 +17,14 @@ describe('QTH locator', () => {
   });
 
   it('Can calculate distance between two squares', () => {
-    expect(qthLocator.distance('KP20le', 'KP21ol')).toBeCloseTo(144.26);
+    expect(qthLocator.distance('KP20le', 'KP21ol')).toBeCloseTo(144);
+  });
+
+  it('Can calculate azimuth between two squares 0 qtf', () => {
+    expect(qthLocator.azimuth('KP20le', 'KP21ol')).toBeCloseTo(0);
+  });
+
+  it('Can calculate azimuth between two squares', () => {
+    expect(qthLocator.azimuth('LO97xw', 'KP21ol')).toBeCloseTo(296);
   });
 });
